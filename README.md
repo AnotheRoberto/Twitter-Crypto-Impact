@@ -48,5 +48,10 @@ Muy usada en tu Excel:
 SI.ERROR(...; "") → devuelve celda vacía si hay error.
 SI(celda="";""; cálculo ) → evita operaciones sobre celdas vacías.
 
+4. Búsqueda con BUSCARX
+=BUSCARX(Tweets!A2; Precios!$A:$A; Precios!$B:$B)
+Objetivo: traer el **precio** (columna B de `Precios`) correspondiente a la **fecha del tweet** en `Tweets!A2`, buscando esa fecha en la columna A de `Precios`.
+Explicación: `BUSCARX` es la evolución de `BUSCARV`/`BUSCARH`. No depende del orden de columnas (puede buscar a la izquierda o a la derecha), es más flexible y permite definir qué devolver si no hay coincidencia.
+
 ## Cómo citar
 > Aileni, R. A. (2025). *La influencia de las redes sociales en la volatilidad de las criptomonedas: un análisis de sentimiento basado en los tweets de Elon Musk*. Trabajo de Fin de Grado, URJC.
